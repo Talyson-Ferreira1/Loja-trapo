@@ -105,6 +105,7 @@ body::-webkit-scrollbar-thumb
     width: 5px;
     border-radius: 50px;
 }
+
 /*--------------- NAVBAR ------------------*/
 
 .header
@@ -207,6 +208,7 @@ body::-webkit-scrollbar-thumb
 {
     transform: translateY(-8px);
 }
+
 /*--------------- SECTION 1 ------------------*/
 
 .bg-anuncio
@@ -293,7 +295,9 @@ body::-webkit-scrollbar-thumb
 {
     font-weight: var(--regular);
 }
+
 /*--------------- SECTION 2 ------------------*/
+
 #slide-produtos
 {
     height: auto;
