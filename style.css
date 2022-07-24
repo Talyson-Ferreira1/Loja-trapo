@@ -218,6 +218,10 @@ body::-webkit-scrollbar-thumb
     max-width: 100%;
     max-height: 100%;
     border-radius: 15px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .anuncio
 {
@@ -227,11 +231,9 @@ body::-webkit-scrollbar-thumb
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    top: 50%;
-    left: 50%;
     color: #fff;
-    transform: translateY(-50%) translateX(-50%);
-    width: 100%;
+
+
 }
 .anuncio h1
 {
@@ -364,10 +366,16 @@ body::-webkit-scrollbar-thumb
 
     position: relative;
 }
+.tab-links img
+{
+    width:30px;
+    height: 30px;
+    margin: 0 var(--m-1) 0 0;
+}
 .tab-links button::after
 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
 
     content: "";
@@ -397,10 +405,10 @@ body::-webkit-scrollbar-thumb
     height: auto;
     
 }
-.aling::-webkit-scrollbar-thumb
+.container-seta
 {
-    width: 10px;
-    border: 1px solid black;
+    position: relative;
+    height: auto;
 }
 .aling
 {
@@ -410,7 +418,7 @@ body::-webkit-scrollbar-thumb
     width: 100%;
     height: auto;
     padding: 0 30px;
-    position: relative;
+
 
 }
 .aling::-webkit-scrollbar
@@ -423,6 +431,8 @@ body::-webkit-scrollbar-thumb
 {
     background:var(--cor-font-1);
     border-radius: 50px;
+    width: 10px;
+    border: 1px solid black;
 }
 .titulo-produto
 {
@@ -494,6 +504,36 @@ body::-webkit-scrollbar-thumb
     border: 1px solid #37373733;
     
 }
+.medidas-p
+{
+    background-image: url(./img/icon-p.png);
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:5%;
+    right: 30%;
+}
+.medidas-m
+{
+    background-image: url(./img/icon-m.png);
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:5%;
+    right: 20%;
+}
+.medidas-g
+{
+    background-image: url(./img/icon-g.png);
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:5%;
+    right: 10%;
+}
 .card .conteudo
 {
    
@@ -543,6 +583,7 @@ h3
     border-top: 3px solid black;
     border-radius: 15px;
     overflow: hidden;
+    margin: var(--m-2) 0;
 
 }
 .bg-sobre
@@ -690,23 +731,7 @@ h4
 }
 
 
-/*
-.tab-links button:hover::after,
-            button.active::after
-{
-    width: 100%;
-}
-.tab-content div
-{
-    animation: up 1s;
-}
-@keyframes up 
-{
-    from {
-        opacity: 0;
-        transform:translateY(15px);
-    }
-}*/
+
 @keyframes seta {
     0%{
         right: 20px;
@@ -763,6 +788,10 @@ h4
     
     }
     /*--------------- SECTION 1 ------------------*/
+    .bg-anuncio
+    {
+        margin-top: 160px;
+    }
     .anuncio h1
     {
         font-size: 50px;
@@ -969,7 +998,7 @@ h4
         display: block;
         position: absolute;
         width: 100%;
-        top:100px;
+        top:70px;
         right: 0px;
         background:#222529bb;
         height:0px;

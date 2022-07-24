@@ -1,7 +1,5 @@
 
 
-
-
 //---  Esse código é responsável por abri e fechar o menu responsivo  ----------
 
 const btnMobile = document.getElementById( 'btn-mobile');
@@ -81,7 +79,7 @@ function TabNavigation(){
         const target = event.currentTarget
         showCurrentTab(target.dataset.id)
 
-        target.className += "active"
+        target.className += " active"
         
     }
 
