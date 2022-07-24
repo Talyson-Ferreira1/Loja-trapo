@@ -106,6 +106,7 @@ body::-webkit-scrollbar-thumb
     border-radius: 50px;
 }
 
+
 /*--------------- NAVBAR ------------------*/
 
 .header
@@ -408,9 +409,8 @@ body::-webkit-scrollbar-thumb
     overflow-x: scroll;
     width: 100%;
     height: auto;
-    padding: 0 20px;
-
-  
+    padding: 0 30px;
+    position: relative;
 
 }
 .aling::-webkit-scrollbar
@@ -431,6 +431,20 @@ body::-webkit-scrollbar-thumb
     font-weight: var(--semi-bold);
     font-size: 20px;
     text-transform: uppercase;
+}
+.seta
+{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: var(--z-fixed);
+    background-image: url(./img/icons-seta-products.png);
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+    animation: seta .5s ease-in-out  infinite alternate ;
 }
 .box-card   
 {
@@ -693,7 +707,14 @@ h4
         transform:translateY(15px);
     }
 }*/
-
+@keyframes seta {
+    0%{
+        right: 20px;
+    }
+    100%{
+        right: 5px;
+    }
+}
 
 @media (max-width:2000px)
 {
@@ -718,7 +739,6 @@ h4
         font-size: 12px;
     }
 }
-
 @media (min-width:1700px) and (max-width:2640px)
 {
     /*--------------- NAVBAR ------------------*/
@@ -918,7 +938,7 @@ h4
     /*--------------- BASE ------------------*/
     main
     {
-        padding:  100px var(--m-6) var(--m-6) var(--m-6);
+        padding:  100px var(--m-3) var(--m-3) var(--m-3);
     }
     section
     {
