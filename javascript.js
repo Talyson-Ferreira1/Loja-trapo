@@ -112,12 +112,3 @@ window.addEventListener('load', () => {
     tabNavigation.init()
 })
 
-//----- Btn produtos ----------
-/* const seta = document.querySelectorAll('.seta');
-const containerProd = document.querySelectorAll('.container-seta');
-
-seta.addEventListener('click', ()=>{
-
-    containerProd.scrollLeft= 1000;
-
-}); */
