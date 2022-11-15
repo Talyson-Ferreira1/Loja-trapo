@@ -1,5 +1,9 @@
 
 
+function load(){
+    const load = document.querySelector('.containerLoad');
+    load.style.display="none";
+}
 //---  Esse código é responsável por abri e fechar o menu responsivo  ----------
 
 const btnMobile = document.getElementById( 'btn-mobile');
@@ -107,3 +111,13 @@ window.addEventListener('load', () => {
     const tabNavigation = TabNavigation()
     tabNavigation.init()
 })
+
+//----- Btn produtos ----------
+/* const seta = document.querySelectorAll('.seta');
+const containerProd = document.querySelectorAll('.container-seta');
+
+seta.addEventListener('click', ()=>{
+
+    containerProd.scrollLeft= 1000;
+
+}); */
