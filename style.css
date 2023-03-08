@@ -273,18 +273,68 @@ body::-webkit-scrollbar-thumb
     margin: 0 var(--m-1);
     
 }
-.icons img
+.icons .icon
 {
 
-    max-height: 20px;
-    max-width: 20px;
+    max-height: 30px;
+    max-width: 30px;
     margin: var(--m1);
     cursor: pointer;
+
 }
-.icons img:hover
+.iconSearch::before,
+.iconBag::before,
+.iconUser::before
 {
-    transform: translateY(-8px);
+    font-size: 1.5em;
 }
+.iconSearch::before
+{
+    content: '\f002';
+    font-family: fontAwesome;
+    color: var(--cor-font-2);
+}
+.iconBag::before
+{
+    content: '\f290';
+    font-family: fontAwesome;
+    color: var(--cor-font-2);
+}
+.iconUser::before
+{
+    content: '\f007';
+    font-family: fontAwesome;
+    color: var(--cor-font-2);
+}
+.iconSearch.active.iconSearch::before
+{
+    content: '\f00d';
+    font-family: fontAwesome;
+}
+.inputSearch
+{
+    position: absolute;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 0vw;
+    opacity: 0;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20%;
+    padding: 1rem;
+    font-size: 1.5em;
+    transition: all 1s;
+    
+}
+.inputSearch.active
+{
+    width: 65%;
+    opacity: 1;
+    
+}
+
 
 /*--------------- SECTION 1 ------------------*/
 
