@@ -1,5 +1,9 @@
 
 
+function load(){
+    const load = document.querySelector('.containerLoad');
+    load.style.display="none";
+}
 //---  Esse código é responsável por abri e fechar o menu responsivo  ----------
 
 const btnMobile = document.getElementById( 'btn-mobile');
@@ -7,8 +11,8 @@ const btnMobile = document.getElementById( 'btn-mobile');
 function toggleMenu(event){
     if (event.type === 'touchstart')event.preventDefaut();
     const nav = document.getElementById('nav');
-    nav.classList.toggle('active'); 
-
+    const input = document.querySelector(".inputSearch");
+    nav.classList.toggle('active');  
 }
 
 btnMobile.addEventListener('click', toggleMenu);
@@ -106,4 +110,13 @@ function TabNavigation(){
 window.addEventListener('load', () => {
     const tabNavigation = TabNavigation()
     tabNavigation.init()
+})
+
+const iconSearch = document.querySelector(".iconSearch");
+
+iconSearch.addEventListener('click', ()=>{
+
+    const input = document.querySelector(".inputSearch");
+    input.classList.toggle('active');
+    iconSearch.classList.toggle('active');
 })
